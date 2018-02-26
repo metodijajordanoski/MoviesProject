@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:background="@drawable/recycler_row_shape">
+    
+    
+    <ImageView
+        android:id="@+id/profile_path"
+        android:layout_width="180dp"
+        android:layout_height="match_parent" />
+
+
+    <TextView
+        android:id="@+id/number"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25dp"
+        android:textColor="@color/Red"
+        android:text="1"
+        android:layout_toRightOf="@+id/profile_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:text="Jesica Barden"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/actorMalefemale"
+        android:paddingLeft="15dp"
+        android:text="Actress"
+        android:layout_below="@+id/profile_name"
+        android:layout_toRightOf="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/White"
+        android:id="@+id/overview"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/profile_path"
+        android:layout_below="@+id/actorMalefemale"
+        android:layout_width="200dp"
+        android:layout_height="160dp" />
+
+    <TextView
+        android:id="@+id/born"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/profile_path"
+        android:layout_below="@+id/overview"
+        android:text="Born: "
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/White"
+        android:id="@+id/birthDate"
+        android:text="20.05.2017"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/born"
+        android:layout_below="@+id/overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+</RelativeLayout>

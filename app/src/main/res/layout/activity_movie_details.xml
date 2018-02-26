@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="prvaaplikacija.moviesproject.activities.MovieDetails">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageFavorite"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/favourites_full"/>
+
+    <TextView
+        android:textColor="@color/White"
+        android:id="@+id/textName"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="STAR WARS: THE LAST JEDI"
+        android:layout_toRightOf="@+id/imageFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_below="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+    <ImageView
+        android:id="@+id/imageMovie"
+        android:layout_below="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="12dp"
+            android:layout_gravity="center"
+            android:src="@drawable/play_circle"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/play_triangle"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:paddingTop="50dp"
+            android:gravity="center"
+            android:text="Trailers and clips"
+            android:textColor="@color/White"
+            android:background="#993c3b3d"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </FrameLayout>
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/director"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:layout_below="@id/frame"
+        android:text="Director: "
+        android:textColor="@color/White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:lines="1"
+        android:id="@+id/textDirector"
+        android:textColor="@color/White"
+        android:textSize="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/director"
+        android:layout_below="@id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/writer"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:layout_below="@id/director"
+        android:text="Writers: "
+        android:textColor="@color/White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textWriters"
+        android:textColor="@color/White"
+        android:textSize="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/director"
+        android:layout_below="@id/textDirector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/stars"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:layout_below="@id/writer"
+        android:text="Stars: "
+        android:textColor="@color/White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textStars"
+        android:textColor="@color/White"
+        android:textSize="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/director"
+        android:layout_below="@id/textWriters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <Button
+        android:id="@+id/buttonMore"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/White"
+        android:textAllCaps="false"
+        android:text="See full cast and crew    >"
+        android:background="@color/colorAccent"
+        android:layout_below="@id/textStars"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:textSize="15dp"
+        android:id="@+id/description"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/buttonMore"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:text="Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:textSize="15dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="35dp"
+        android:textColor="@color/White"
+        android:layout_below="@id/description"
+        android:text="fnjkfnaljbfkljbefjb\ekh\blhe\kbf;\ejbfkj\ebf\bekhfb\ekhfbkhe\bfbe\,bf\khbfkhbfkhrbfhrbj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

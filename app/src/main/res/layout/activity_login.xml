@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login"
+    tools:context="prvaaplikacija.moviesproject.activities.LoginActivity">
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:hint="Username"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/search_shape"/>
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/search_shape"/>
+
+    <TextView
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/White"
+        android:text="Forgot your password?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:textAllCaps="false"
+        android:text="Login"
+        android:textColor="@color/White"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>
